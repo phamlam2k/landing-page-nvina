@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* Màu thương hiệu NVINA — primary #0C5ADB */
+  --color-primary-50: #eef4fe;
+  --color-primary-100: #d8e6fd;
+  --color-primary-200: #b3ccfb;
+  --color-primary-300: #84aaf6;
+  --color-primary-600: #0c5adb;
+  --color-primary-700: #0a49b0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hiệu ứng toả sáng nhẹ cho thẻ ngành nổi bật */
+@keyframes featured-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 1px rgba(12, 90, 219, 0.35), 0 10px 30px -10px rgba(12, 90, 219, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 1px rgba(12, 90, 219, 0.55), 0 16px 40px -8px rgba(12, 90, 219, 0.6);
+  }
+}
+
+.featured-glow {
+  animation: featured-glow 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featured-glow {
+    animation: none;
+  }
+}
