@@ -49,7 +49,7 @@ export const INDUSTRIES: Industry[] = [
     icon: "HandCoins",
     keywords: ["cam do", "cầm cố", "pawn", "vay", "tiệm cầm đồ"],
     active: true,
-    href: "https://landing-dev.nvina.com.vn/",
+    href: "https://landing.nvina.vn/#lien-he",
   },
   {
     slug: "san-xuat-con-dau",

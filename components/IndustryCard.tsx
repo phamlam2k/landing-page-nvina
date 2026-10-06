@@ -54,7 +54,7 @@ export function IndustryCard({ industry }: Props) {
 
       {active && (
         <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary-600">
-          Đăng ký ngay
+          Xem chi tiết
           <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
         </span>
       )}
